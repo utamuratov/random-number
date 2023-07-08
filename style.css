@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+.box {
+  margin: auto;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.from,
+.to {
+  flex: 1;
+  font-size: 20px;
+}
+
+input {
+  width: 42px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 0 10px 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(65, 65, 65);
+}
+
+.from {
+  text-align: end;
+}
+
+#random {
+  width: 200px;
+  height: 70px;
+  align-self: center;
+  font-size: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: heart 6s infinite 2s;
+}
+
+@keyframes heart {
+  0% {
+    font-size: 60px;
+  }
+  10% {
+    font-size: 70px;
+  }
+
+  20%,
+  100% {
+    font-size: 60px;
+  }
+}
