@@ -7,7 +7,7 @@ function startRandom() {
     const min = +document.getElementById("min").value;
     const max = +document.getElementById("max").value;
     const random =
-      (Math.floor(Math.random() * (max - min)) % (max - min + 1)) + min;
+      Math.floor(Math.random() * (max - min)) + min;
     document.getElementById("random").innerHTML = random;
 
     if (i == 10) {
